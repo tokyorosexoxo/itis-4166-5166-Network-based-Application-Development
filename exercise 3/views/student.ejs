@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+
+    <h2>Student Details</h2>
+    <% if(student) {%>
+      <tr>
+          <th>Name</th>
+          <th>Major</th>
+          <th>GPA</th>
+      </tr>
+      <tr>
+          <td><%= name1%></td>
+          <td><%= major1%></td>
+          <td><%= gpa1%></td>
+      </tr>
+      <tr>
+        <td><%= name2%></td>
+        <td><%= major2%></td>
+        <td><%= gpa2%></td>
+    </tr>
+    <tr>
+        <td><%= name3%></td>
+        <td><%= major3%></td>
+        <td><%= gpa3%></td>
+    </tr>
+       <% } else {%>
+        <p>No student matches the ID</p>
+        <%}%>
+
+</body>
+
+</html>
